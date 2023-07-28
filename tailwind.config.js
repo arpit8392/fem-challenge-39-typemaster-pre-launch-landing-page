@@ -6,7 +6,9 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-			backgroundImage: {},
+			backgroundImage: {
+        'pattern-square': 'url("/public/assets/shared/pattern-square.svg")'
+      },
 			colors: {
 				vividOrange: '#F16718',
 				peach: '#FF9B62',
