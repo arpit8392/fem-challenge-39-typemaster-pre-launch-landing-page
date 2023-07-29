@@ -57,7 +57,7 @@ const Hero = () => {
 					/>
 				</div>
 			</div>
-			<div className='grid grid-cols-1 gap-20 md:px-10 lg:relative lg:grid-cols-5 lg:gap-10 lg:px-40'>
+			<div className='grid grid-cols-1 gap-20 md:px-10 lg:relative lg:grid-cols-6 lg:px-40'>
 				<div className='absolute -left-32 bottom-0 hidden lg:block'>
 					<Image
 						src={'/assets/shared/pattern-square.svg'}
@@ -117,11 +117,11 @@ const Hero = () => {
 						/>
 					</div>
 				</div>
-				<div className='grid grid-cols-1 gap-6 px-6 text-center md:grid-cols-3 md:gap-9 md:self-center md:text-left lg:col-span-1 lg:grid-cols-1'>
+				<div className='grid grid-cols-1 gap-6 px-6 text-center md:grid-cols-3 md:gap-9 md:self-center md:text-left lg:col-span-2 lg:grid-cols-1'>
 					<h2 className='text-[32px]/9 font-black uppercase text-darkBlue md:col-span-1'>
 						Mechanical Wireless Keyboard
 					</h2>
-					<p className='text-base/7 font-medium text-pastelBlue md:col-span-2 md:self-center'>
+					<p className='text-base/7 font-medium text-pastelBlue md:col-span-2 md:self-center lg:max-w-xs'>
 						The Typemaster keyboard boasts top-notch build and practical design.
 						It offers a wide variety of switches and keycaps, along with
 						reliable wireless connectivity.
