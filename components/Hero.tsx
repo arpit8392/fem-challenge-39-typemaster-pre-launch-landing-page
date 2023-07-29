@@ -3,15 +3,23 @@ import Link from 'next/link'
 
 const Hero = () => {
 	return (
-		<section className='grid grid-cols-1 gap-6 py-16'>
-			{/* Top Section */}
-			<div className='grid grid-cols-1 gap-16 md:grid-cols-3 lg:gap-32'>
+		<section className='grid grid-cols-1 gap-6 overflow-x-hidden py-16 md:gap-10'>
+			<div className='grid grid-cols-1 gap-16 md:grid-cols-2 lg:relative lg:grid-cols-5 lg:px-40'>
+				<div className='absolute -right-32 end-0 hidden lg:block'>
+					<Image
+						src={'/assets/shared/pattern-square.svg'}
+						alt=''
+						width={255}
+						height={240}
+						className='h-full '
+					/>
+				</div>
 				{/* Content */}
-				<div className='flex flex-col gap-8 px-6 md:col-span-2 md:px-10 lg:px-40'>
-					<h1 className='text-[48px]/[48px] font-black uppercase text-darkBlue'>
+				<div className='flex flex-col gap-8 pl-6 md:self-center md:pl-10 lg:col-span-2'>
+					<h1 className='text-[48px]/[48px] font-black uppercase text-darkBlue lg:text-[56px]/[56px]'>
 						Typemaster Keyboard
 					</h1>
-					<p className='max-w-sm text-base/7 font-medium text-pastelBlue md:max-w-none'>
+					<p className='max-w-sm text-base/7 font-medium text-pastelBlue md:max-w-xs lg:max-w-none lg:text-lg/7'>
 						Improve your productivity and gaming without breaking the bank.
 						Upgrade to a high quality mechanical typing experience.
 					</p>
@@ -26,7 +34,7 @@ const Hero = () => {
 						</p>
 					</div>
 				</div>
-				<div className='pl-6 md:col-span-1'>
+				<div className='pl-6 lg:col-span-3'>
 					<Image
 						src={'/assets/mobile/image-keyboard.jpg'}
 						alt=''
@@ -39,21 +47,30 @@ const Hero = () => {
 						alt=''
 						width={956}
 						height={850}
-						className='hidden rounded-l-3xl object-cover object-center md:block lg:hidden'
+						className='hidden rounded-l-3xl md:block lg:hidden'
 					/>
 					<Image
 						src={'/assets/desktop/image-keyboard.jpg'}
 						alt=''
 						width={1080}
 						height={960}
-						className='hidden w-auto rounded-3xl object-contain lg:block'
+						className='hidden w-full rounded-3xl object-contain lg:block'
 					/>
 				</div>
 			</div>
 			{/* Bottom Section */}
-			<div className='grid grid-cols-1 gap-20 md:px-10 lg:grid-cols-4 lg:px-40'>
+			<div className='grid grid-cols-1 gap-20 md:px-10 lg:relative lg:grid-cols-5 lg:gap-0 lg:px-40'>
+				<div className='absolute -left-32 bottom-0 hidden lg:block'>
+					<Image
+						src={'/assets/shared/pattern-square.svg'}
+						alt=''
+						width={255}
+						height={240}
+						className='h-full'
+					/>
+				</div>
 				{/* Images */}
-				<div className='grid grid-cols-3 gap-6 md:gap-8 lg:col-span-3'>
+				<div className='grid grid-cols-3 gap-6 md:gap-8 lg:col-span-4'>
 					<div className='relative col-span-1 overflow-hidden rounded-r-3xl md:rounded-3xl'>
 						<div className='absolute inset-0 bg-vividOrange mix-blend-multiply' />
 						<Image
@@ -99,16 +116,16 @@ const Hero = () => {
 							alt=''
 							width={887}
 							height={960}
-							className='hidden w-auto h-full rounded-3xl object-contain lg:block'
+							className='hidden h-full w-auto rounded-3xl object-contain lg:block'
 						/>
 					</div>
 				</div>
 				{/* Content */}
-				<div className='grid grid-cols-1 gap-6 px-6 text-center md:grid-cols-3 md:gap-9 md:text-left lg:grid-cols-1'>
+				<div className='grid grid-cols-1 gap-6 px-6 text-center md:grid-cols-3 md:gap-9 md:self-center md:text-left lg:col-span-1 lg:grid-cols-1'>
 					<h2 className='text-[32px]/9 font-black uppercase text-darkBlue md:col-span-1'>
 						Mechanical Wireless Keyboard
 					</h2>
-					<p className='text-base/7 font-medium text-pastelBlue md:col-span-2 '>
+					<p className='text-base/7 font-medium text-pastelBlue md:col-span-2 md:self-center'>
 						The Typemaster keyboard boasts top-notch build and practical design.
 						It offers a wide variety of switches and keycaps, along with
 						reliable wireless connectivity.
