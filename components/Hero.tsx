@@ -5,16 +5,15 @@ const Hero = () => {
 	return (
 		<section className='grid grid-cols-1 gap-6 overflow-x-hidden py-16 md:gap-10'>
 			<div className='grid grid-cols-1 gap-16 md:grid-cols-2 lg:relative lg:grid-cols-5 lg:px-40'>
-				<div className='absolute -right-32 end-0 hidden lg:block'>
+				<div className='absolute -right-32 top-0 hidden lg:block'>
 					<Image
 						src={'/assets/shared/pattern-square.svg'}
 						alt=''
 						width={255}
 						height={240}
-						className='h-full '
+						className='h-full'
 					/>
 				</div>
-				{/* Content */}
 				<div className='flex flex-col gap-8 pl-6 md:self-center md:pl-10 lg:col-span-2'>
 					<h1 className='text-[48px]/[48px] font-black uppercase text-darkBlue lg:text-[56px]/[56px]'>
 						Typemaster Keyboard
@@ -58,7 +57,6 @@ const Hero = () => {
 					/>
 				</div>
 			</div>
-			{/* Bottom Section */}
 			<div className='grid grid-cols-1 gap-20 md:px-10 lg:relative lg:grid-cols-5 lg:gap-0 lg:px-40'>
 				<div className='absolute -left-32 bottom-0 hidden lg:block'>
 					<Image
@@ -95,7 +93,6 @@ const Hero = () => {
 							className='hidden w-full rounded-3xl object-contain lg:block'
 						/>
 					</div>
-					{/* Right Image */}
 					<div className='col-span-2'>
 						<Image
 							src={'/assets/mobile/image-glass-and-keyboard.jpg'}
@@ -120,7 +117,6 @@ const Hero = () => {
 						/>
 					</div>
 				</div>
-				{/* Content */}
 				<div className='grid grid-cols-1 gap-6 px-6 text-center md:grid-cols-3 md:gap-9 md:self-center md:text-left lg:col-span-1 lg:grid-cols-1'>
 					<h2 className='text-[32px]/9 font-black uppercase text-darkBlue md:col-span-1'>
 						Mechanical Wireless Keyboard
