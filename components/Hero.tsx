@@ -57,7 +57,7 @@ const Hero = () => {
 					/>
 				</div>
 			</div>
-			<div className='grid grid-cols-1 gap-20 md:px-10 lg:relative lg:grid-cols-5 lg:gap-0 lg:px-40'>
+			<div className='grid grid-cols-1 gap-20 md:px-10 lg:relative lg:grid-cols-5 lg:gap-10 lg:px-40'>
 				<div className='absolute -left-32 bottom-0 hidden lg:block'>
 					<Image
 						src={'/assets/shared/pattern-square.svg'}
